@@ -2,14 +2,15 @@ Template.home.events({
 	'click #submit-btn': function(event) {
 		Session.set('submit-pressed', true);
 	},
-	'click #ok': function(event) {
+	'submit form' : function(event, template) {
 		event.preventDefault();
 		Session.set('submit-pressed', false);
-		name = home.find("input[name=name]");
+		var name = $('#submitPost').val();
 		Posts.insert({
 			name: name, 
 			date: new Date(),
-			votes: 0
+			votes: 0,
+			comments: {}
 		});
 	}
 })
