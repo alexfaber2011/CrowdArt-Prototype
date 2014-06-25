@@ -1,7 +1,10 @@
 <template name="home">
     <div class="row">
     	{{> welcome}}
-    	<button id="submit" class="btn btn-warning">Submit Idea Here</button>
-    	{{> insertPost}}
+    	{{#if submitBox}}
+    	    {{> insertPostForm}}
+    	{{else}}
+        	{{> submitButton}} 
+    	{{/if}}
     </div>
 </template>
