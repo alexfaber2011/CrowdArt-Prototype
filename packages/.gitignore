@@ -2,6 +2,10 @@
 /iron-router
 /blaze-layout
 /bootstrap-3
+<<<<<<< HEAD
+/simple-schema
+=======
+>>>>>>> 7cf1671c5019e3973d6e27305f38e3f5103a6b7d
 /autoform
 /collection2
 /moment
