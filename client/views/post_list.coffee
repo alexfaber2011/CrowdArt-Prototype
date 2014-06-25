@@ -1,3 +1,5 @@
 Template.postList.helpers
   posts: ->
-    Posts.find
+    Posts.find {},
+      sort:
+        votes: -1

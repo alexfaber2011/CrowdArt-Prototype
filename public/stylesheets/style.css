@@ -10,6 +10,8 @@ body{
     text-align: center;
 }
 
-.post{
-    background-color: white;
+div.post{
+    position: relative;
+    background: white;
+    padding: 10px;
 }
