@@ -5,7 +5,8 @@
       "simple-schema": {},
       "iron-router": {},
       "bootstrap-3": {},
-      "autoform": {}
+      "autoform": {},
+      "font-awesome": {}
     },
     "packages": {
       "simple-schema": {
@@ -27,6 +28,11 @@
         "git": "https://github.com/aldeed/meteor-autoform.git",
         "tag": "v0.13.1",
         "commit": "e77832d40f8eec2ddb92d97f481bf86fb712d9ca"
+      },
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v4.1.0",
+        "commit": "ce6b1e92715d1938babc5d69c655c17e387f5926"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
