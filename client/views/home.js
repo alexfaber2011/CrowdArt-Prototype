@@ -9,7 +9,8 @@ Template.home.events({
 		Posts.insert({
 			name: name, 
 			date: new Date(),
-			votes: 0
+			votes: 0,
+			comments: {}
 		});
 	}
 })

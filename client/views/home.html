@@ -1,13 +1,12 @@
 <template name="home">
     <div class="row">
     	{{> welcome}}
-    	{{#if submitBox}}
-    	    {{> insertPostForm}}
-    	{{else}}
-        	{{> submitButton}} 
-    	{{/if}}
         <div class="center col-sm-12">
-    	    <button id="submit" class="btn btn-warning">Submit Idea Here</button>
+            {{#if submitBox}}
+                {{> insertPostForm}}
+            {{else}}
+                {{> submitButton}} 
+            {{/if}}
         </div>
     	<!--{{> insertPost}}-->
         {{> postList}}
