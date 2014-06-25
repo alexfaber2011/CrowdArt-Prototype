@@ -6,3 +6,6 @@
 standard-app-packages
 insecure
 simple-schema
+coffeescript
+iron-router
+bootstrap-3

@@ -1,5 +1,7 @@
 {
   "packages": {
-    "simple-schema": {}
+    "simple-schema": {},
+    "iron-router": {},
+    "bootstrap-3": {}
   }
 }
