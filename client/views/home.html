@@ -1,7 +1,10 @@
 <template name="home">
     <div class="row">
     	{{> welcome}}
-    	<button id="submit" class="btn btn-warning">Submit Idea Here</button>
-    	{{> insertPost}}
+        <div class="center col-sm-12">
+    	    <button id="submit" class="btn btn-warning">Submit Idea Here</button>
+        </div>
+    	<!--{{> insertPost}}-->
+        {{> postList}}
     </div>
 </template>
