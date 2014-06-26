@@ -5,6 +5,27 @@
             <h4>{{name}}</h4>
             <p>Votes: {{votes}} </p>
             <button class="btn btn-warning upvote">+1</button>
+            <button class="btn btn-warning comments">comments</button>
+            {{#if showComment}}
+            <div style="position: relative; overflow-y: scroll; max-height:500px; border:1px solid #faa21e; background:white;">
+                <button style="color:#faa21e; background: white; position: absolute; right:0px; top: 0px; border-left: 2px solid #faa21e; border-bottom: 2px solid #faa21e; border-style: none none solid solid;" class="new_comment">
+                    <i class="fa fa-plus"></i>
+                </button>
+                {{#each comments}}
+                    {{> comment}}
+                {{/each}}
+                <br><br><br>
+                {{#if showSubmit}}
+                    <form id="comment" class="form-horizontal">
+                        <div>
+                            <input id="submitName" name="name" placeholder="Name">
+                            <input id="submitComment" name="comment" placeholder="Comment">
+                            <button id="commentButton" class="btn btn-warning">Comment</button>
+                        </div>
+                    </form>
+                {{/if}}
+            </div>
+            {{/if}}
         </div>
     </div>
 </template>

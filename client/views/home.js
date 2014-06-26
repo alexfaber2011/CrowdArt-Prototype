@@ -2,18 +2,18 @@ Template.home.events({
 	'click #submit-btn': function(event) {
 		Session.set('submit-pressed', true);
 	},
+
 	'submit form' : function(event, template) {
 		event.preventDefault();
-		Session.set('submit-pressed', false);
 		var name = $('#submitPost').val();
 		Posts.insert({
 			name: name, 
 			date: new Date(),
 			votes: 0,
-			comments: {}
+			comments: []
 		});
 	}
-})
+});
 
 Template.home.helpers({
 	submitBox: function () {
@@ -23,5 +23,8 @@ Template.home.helpers({
 		} else {
 			return false;
 		}
+	},
+	comments: function () {
+		return this._id.comments;
 	}
 });
