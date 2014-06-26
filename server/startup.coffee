@@ -4,7 +4,9 @@ Meteor.startup ->
       name: "This is an idea, you should upvote it"
       votes: 0
       date: new Date()
+      comments: []
     Posts.insert
       name: "We should paint their pants yellow"
       votes: 1
       date: new Date()
+      comments: []
