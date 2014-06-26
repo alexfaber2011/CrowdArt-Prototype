@@ -6,7 +6,8 @@
       "iron-router": {},
       "bootstrap-3": {},
       "autoform": {},
-      "font-awesome": {}
+      "font-awesome": {},
+      "reactive-modal": {}
     },
     "packages": {
       "simple-schema": {
@@ -26,13 +27,18 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.13.1",
-        "commit": "e77832d40f8eec2ddb92d97f481bf86fb712d9ca"
+        "tag": "v0.13.3",
+        "commit": "23a7ba0754f353513fda44f666b600e69c62a208"
       },
       "font-awesome": {
         "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
         "tag": "v4.1.0",
         "commit": "ce6b1e92715d1938babc5d69c655c17e387f5926"
+      },
+      "reactive-modal": {
+        "git": "https://github.com/pahans/reactive-modal.git",
+        "tag": "v0.1.2",
+        "commit": "3ed9319c991c1567b4e9b6a85d33c6d4571aacb2"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

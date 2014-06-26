@@ -4,6 +4,7 @@
     "iron-router": {},
     "bootstrap-3": {},
     "autoform": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "reactive-modal": {}
   }
 }
