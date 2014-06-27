@@ -6,12 +6,15 @@ Template.home.events({
 	'submit form' : function(event, template) {
 		event.preventDefault();
 		var name = $('#submitPost').val();
-		Posts.insert({
-			name: name, 
-			date: new Date(),
-			votes: 0,
-			comments: []
-		});
+		if(name)
+		{
+			Posts.insert({
+				name: name, 
+				date: new Date(),
+				votes: 0,
+				comments: []
+			});
+		}
 	}
 });
 

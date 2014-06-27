@@ -19,6 +19,7 @@ Template.postItem.events({
     }
     Posts.update({_id: this._id}, { $push: { comments: newComment }});
     Session.set(this._id.concat('_submit'), false);
+    Session.set('comment-name', name);
   },
 
   "click .comments" : function() {
@@ -50,6 +51,9 @@ Template.postItem.helpers({
   },
   comments: function() {
     return this.comments;
-  }
+  },
+  commentName: function () {
+    return Session.get('comment-name');
+  },
 });
 
