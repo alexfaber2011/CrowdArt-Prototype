@@ -1,5 +1,5 @@
 <template name="postItem">
-    <div class="col-md-4">
+    <div class="col-md-6 col-md-offset-3">
         <div class="post" style="background: white">
             <img style="margin-top: 10px;" src="images/CrowdArtLogoSmall.png" alt="CrowdArt" />
             <h4>{{name}}</h4>
@@ -14,32 +14,35 @@
             </button>
             {{#if showComment}}
             <br><br>
-            <div style="position: relative; overflow-y: scroll; max-height:500px; border:1px solid #faa21e; background:white; padding: 10px;">
-                <button 
-                style="color:#faa21e; background: white; position: absolute;
-                right:0px; top: 0px; border-left: 2px solid #faa21e; 
-                border-bottom: 2px solid #faa21e; border-style: none none solid solid;
-                " 
-                class="new_comment">
+            <div style="position: relative; overflow: hidden">
+                <button
+                        style="color:#faa21e; background: white; position: absolute;
+                    right:0px; top: 0px; border-left: 2px solid #faa21e;
+                    border-bottom: 2px solid #faa21e; border-style: none none solid solid; z-index: 1;
+                    "
+                        class="new_comment">
                     <i class="fa fa-plus"></i>
                 </button>
-                {{#each comments}}
-                    {{> comment}}
-                    <br>
-                {{/each}}
-                <br><br><br>
+                <div style="position: relative; overflow-y: scroll; max-height: 250px; border:1px solid #faa21e; background:white; padding: 10px;">
+                    {{#each comments}}
+                        {{> comment}}
+                        <br>
+                    {{/each}}
+                    <br><br><br>
+
+                </div>
                 {{#if showSubmit}}
-                    <form id="comment" class="form-horizontal">
-                        <div>
-                            {{#if commentName}}
-                                <input id="submitName" name="name" placeholder="Name" value = "{{commentName}}">
-                            {{else}}
-                                <input id="submitName" name="name" placeholder="Name">   
-                            {{/if}}
-                            <input id="submitComment" name="comment" placeholder="Comment">
-                            <button id="commentButton" class="btn btn-warning">Comment</button>
-                        </div>
-                    </form>
+                <form id="comment" class="form-horizontal" style="padding-top: 25px; padding-bottom: 10px; border:1px solid #faa21e; border-top: none; overflow: hidden;">
+                    <div class="col-md-3">
+                        <input id="submitName" name="name" class="form-control" placeholder="Name" value="{{commentName}}">
+                    </div>
+                    <div class="col-md-6">
+                        <input id="submitComment" class="form-control" name="comment" placeholder="Comment">
+                    </div>
+                    <div class="col-md-3">
+                        <button id="commentButton" class="btn btn-warning" style="width: 100%;">Comment</button>
+                    </div>
+                </form>
                 {{/if}}
             </div>
             {{/if}}
