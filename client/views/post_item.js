@@ -54,6 +54,11 @@ Template.postItem.helpers({
   },
   commentName: function () {
     return Session.get('comment-name');
+  },
+
+  commentCount: function() {
+    return this.comments.length;
   }
+
 });
 
