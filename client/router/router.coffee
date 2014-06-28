@@ -7,3 +7,6 @@ Router.map ->
     waitOn: ->
       Meteor.subscribe "posts"
       Meteor.subscribe "comments"
+
+  @route "purge",
+    path: "/purge"

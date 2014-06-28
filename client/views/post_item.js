@@ -36,9 +36,9 @@ Template.postItem.helpers({
 	showComment: function () {
     if(Session.get(this._id.concat('_comments')))
   	{
-  		return true;
+  	    return true;
   	} else {
-  	 return false;
+  	    return false;
   	}
 	},
   showSubmit: function () {
@@ -54,6 +54,6 @@ Template.postItem.helpers({
   },
   commentName: function () {
     return Session.get('comment-name');
-  },
+  }
 });
 

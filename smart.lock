@@ -7,7 +7,8 @@
       "bootstrap-3": {},
       "autoform": {},
       "font-awesome": {},
-      "reactive-modal": {}
+      "reactive-modal": {},
+      "bootboxjs": {}
     },
     "packages": {
       "simple-schema": {
@@ -27,8 +28,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.13.3",
-        "commit": "23a7ba0754f353513fda44f666b600e69c62a208"
+        "tag": "v0.13.5",
+        "commit": "27dd5b912eeba687b228a6a7c2c14eef63b12cca"
       },
       "font-awesome": {
         "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
@@ -40,6 +41,11 @@
         "tag": "v0.1.2",
         "commit": "3ed9319c991c1567b4e9b6a85d33c6d4571aacb2"
       },
+      "bootboxjs": {
+        "git": "https://github.com/TimHeckel/meteor-bootboxjs.git",
+        "tag": "v4.2.0",
+        "commit": "2b7d18ad028d9e7b37238ecf2a8a7970735cebd1"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
@@ -47,8 +53,8 @@
       },
       "collection2": {
         "git": "https://github.com/aldeed/meteor-collection2.git",
-        "tag": "v0.4.1",
-        "commit": "a9ffc9b285c3af8ad631f9cda4851b0ffc30c5ce"
+        "tag": "v0.4.2",
+        "commit": "4ff4b707bec8be434919730bf101325adb215444"
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",

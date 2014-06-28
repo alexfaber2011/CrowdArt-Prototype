@@ -1,12 +1,12 @@
 Meteor.startup ->
   if Posts.find().count() is 0
     Posts.insert
-      name: "This is an idea, you should upvote it"
+      name: "Let's paint his face orange"
       votes: 0
       date: new Date()
       comments: []
     Posts.insert
-      name: "We should paint their pants yellow"
-      votes: 1
+      name: "I think it would be neat to tie a theme around happiness."
+      votes: 0
       date: new Date()
       comments: []

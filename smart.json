@@ -5,6 +5,7 @@
     "bootstrap-3": {},
     "autoform": {},
     "font-awesome": {},
-    "reactive-modal": {}
+    "reactive-modal": {},
+    "bootboxjs": {}
   }
 }
