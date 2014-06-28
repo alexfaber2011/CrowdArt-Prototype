@@ -1,6 +1,7 @@
 Template.postItem.events({
-  "click .upvote": function() {
-    return Posts.update({
+  "click .upvote": function(event) {
+    $(event.currentTarget).prop('disabled', true);
+      return Posts.update({
       _id: this._id
     }, {
       $inc: {
