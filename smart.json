@@ -7,6 +7,7 @@
     "font-awesome": {},
     "reactive-modal": {},
     "bootboxjs": {},
-    "accounts-ui-bootstrap-dropdown": {}
+    "accounts-ui-bootstrap-dropdown": {},
+    "alertfy": {}
   }
 }

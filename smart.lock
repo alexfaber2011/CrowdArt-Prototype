@@ -9,7 +9,8 @@
       "font-awesome": {},
       "reactive-modal": {},
       "bootboxjs": {},
-      "accounts-ui-bootstrap-dropdown": {}
+      "accounts-ui-bootstrap-dropdown": {},
+      "alertfy": {}
     },
     "packages": {
       "simple-schema": {
@@ -51,6 +52,11 @@
         "git": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown.git",
         "tag": "v0.8.3",
         "commit": "a7af8a52e4e74db020a69b158a8f992797b8b0b0"
+      },
+      "alertfy": {
+        "git": "https://github.com/cristiandley/Alertfy.git",
+        "tag": "v0.0.2",
+        "commit": "e412bf2b6e8f39737f86c2ac8cce37116c3e3ab8"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
