@@ -8,7 +8,8 @@
       "autoform": {},
       "font-awesome": {},
       "reactive-modal": {},
-      "bootboxjs": {}
+      "bootboxjs": {},
+      "accounts-ui-bootstrap-dropdown": {}
     },
     "packages": {
       "simple-schema": {
@@ -45,6 +46,11 @@
         "git": "https://github.com/TimHeckel/meteor-bootboxjs.git",
         "tag": "v4.2.0",
         "commit": "2b7d18ad028d9e7b37238ecf2a8a7970735cebd1"
+      },
+      "accounts-ui-bootstrap-dropdown": {
+        "git": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown.git",
+        "tag": "v0.8.3",
+        "commit": "a7af8a52e4e74db020a69b158a8f992797b8b0b0"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

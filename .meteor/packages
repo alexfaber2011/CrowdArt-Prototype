@@ -13,3 +13,5 @@ autoform
 font-awesome
 reactive-modal
 bootboxjs
+accounts-ui-bootstrap-dropdown
+accounts-password
