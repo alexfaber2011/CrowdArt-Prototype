@@ -14,7 +14,11 @@ Template.home.events({
 				votes: 0,
 				comments: []
 			});
+		} else {
+			alertify.error("New submission cannot be empty!");
+			return;
 		}
+		Session.set('submit-pressed', false);
 	}
 });
 
