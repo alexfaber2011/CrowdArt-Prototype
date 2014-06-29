@@ -14,13 +14,18 @@ Template.postItem.events({
     event.preventDefault();
     var name = $('#submitName').val();
     var comment = $('#submitComment').val();
-    var newComment = {
-      name: name,
-      comment: comment
+    if(name && comment)
+    {
+      var newComment = {
+        name: name,
+        comment: comment
+      }
+      Posts.update({_id: this._id}, { $push: { comments: newComment }});
+      Session.set(this._id.concat('_submit'), false);
+      Session.set('comment-name', name);
+    } else {
+      alertify.error("New comment cannot be empty!");
     }
-    Posts.update({_id: this._id}, { $push: { comments: newComment }});
-    Session.set(this._id.concat('_submit'), false);
-    Session.set('comment-name', name);
   },
 
   "click .comments" : function() {
