@@ -2,17 +2,22 @@ Template.insertPostForm.events({
 	'submit form' : function(event, template) {
 		event.preventDefault();
 		var name = $('#submitPost').val();
-		if(name)
-		{
-			Posts.insert({
-				name: name, 
-				date: new Date(),
-				votes: 0,
-				comments: []
-			});
-		} else {
-			alertify.error("New submission cannot be empty!");
-		}
-		Session.set('submit-pressed', false);
+        if(name.length < 40) {
+            if (name) {
+                Posts.insert({
+                    name: name,
+                    date: new Date(),
+                    votes: 0,
+                    comments: []
+                });
+            } else {
+                alertify.error("New submission cannot be empty!");
+            }
+            Session.set('submit-pressed', false);
+        }
+        else{
+            alertify.error("Submission must be less than 40 characters");
+        }
+
 	}
 })

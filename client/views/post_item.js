@@ -23,6 +23,7 @@ Template.postItem.events({
       Posts.update({_id: this._id}, { $push: { comments: newComment }});
       Session.set(this._id.concat('_submit'), false);
       Session.set('comment-name', name);
+      $('#submitComment').val("");
     } else {
       alertify.error("New comment cannot be empty!");
     }
