@@ -12,8 +12,11 @@ Template.postItem.events({
 
   'submit form' : function(event, template) {
     event.preventDefault();
-    var name = $('#submitName').val();
-    var comment = $('#submitComment').val();
+    console.log(event.currentTarget);
+    var name = $(event.currentTarget).find(".submitName").val();
+    console.log(name);
+    var comment = $(event.currentTarget).find(".submitComment").val();
+    console.log(comment);
     if(name && comment)
     {
       var newComment = {
@@ -23,7 +26,7 @@ Template.postItem.events({
       Posts.update({_id: this._id}, { $push: { comments: newComment }});
       Session.set(this._id.concat('_submit'), false);
       Session.set('comment-name', name);
-      $('#submitComment').val("");
+      $('.submitComment').val("");
     } else {
       alertify.error("New comment cannot be empty!");
     }
