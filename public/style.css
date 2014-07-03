@@ -7,8 +7,8 @@ body{
     font-family: Bebas;
 }
 
-.welcome-top{
-    font-size: 300%;
+.alertify-log-error {
+    background: #5E87C5;
 }
 
 .center{
