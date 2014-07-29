@@ -1,5 +1,6 @@
 Template.insertPostForm.events({
 	'submit form' : function(event, template) {
+        var route = Session.get("route");
 		event.preventDefault();
 		var name = $('#submitPost').val();
         if(name.length < 40) {
@@ -8,7 +9,8 @@ Template.insertPostForm.events({
                     name: name,
                     date: new Date(),
                     votes: 0,
-                    comments: []
+                    comments: [],
+                    route: route
                 });
             } else {
                 alertify.error("New submission cannot be empty!");

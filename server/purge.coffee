@@ -1,3 +1,3 @@
 Meteor.methods
-  purge: ->
-    Posts.remove({})
+  purge: (route) ->
+    Posts.remove({route: route})
