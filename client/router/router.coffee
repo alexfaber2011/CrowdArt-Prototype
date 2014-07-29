@@ -2,9 +2,22 @@ Router.configure
   layoutTemplate: "layout"
 
 Router.map ->
+  ###########   /   ##########
   @route "home",
+    path: "/"
+    onBeforeAction: ->
+      Session.set "route", ""
+    waitOn: ->
+      Meteor.subscribe "posts", ""
+      Meteor.subscribe "comments", ""
 
-    ###########   MADISONASFUCK   ##########
+  @route "purge",
+    path: "/purge"
+    onBeforeAction: ->
+      Session.set "route", ""
+
+  ###########   MADISONASFUCK   ##########
+  @route "home",
     path: "/madisonasfuck"
     onBeforeAction: ->
       Session.set "route", "madisonasfuck"
